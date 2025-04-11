@@ -2,19 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Gallery</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="Artifacts.html">Projects</a>
-        <a href="Resume.html">Resume</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Artifacts.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Resume.html">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
     <!-- Section: Gallery -->
-    <h2>Gallery</h2>
-    <img src="https://via.placeholder.com/300" alt="Placeholder image of my work" style="max-width: 100%;">
-    <hr>
+    <div class="container mt-4">
+        <h2 class="text-center">Gallery</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="Images/Gladiator.png" alt="Placeholder image of my work" class="img-fluid rounded">
+            </div>
+            <div class="col-md-3">
+                <img src="Images/Boss.png" alt="Placeholder image of my work" class="img-fluid rounded">
+            </div>
+            <div class="col-md-3">
+                <img src="Images/Portal.png" alt="Placeholder image of my work" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+
+    <!-- Section: Game Trailer -->
+<div class="container mt-5">
+    <h2 class="text-center">Game Trailer</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <video class="w-100 rounded" controls>
+                <source src="Images/GameTrailer.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

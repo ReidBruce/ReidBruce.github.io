@@ -1,44 +1,67 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="Styles/Home.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/Home.css">
 </head>
 <body>
-    
-    <nav>
-        <a href="Gallary.html">Gallary</a>
-        <a href="Artifacts.html">Projects</a>
-        <a href="Resume.html">Resume</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Gallary.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Artifacts.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Resume.html">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <!-- I completed my Bibliography and added a css animation and my resume to the website as well as some begginer css for the pages -->
-    <h1>Reid Bruce</h1>
-    <p>Hello! I'm Reid Bruce, a Game/Web Programmer. Welcome to my portfolio website, where I showcase my skills,
-        projects, and experiences.
+    <div class="container mt-4">
+        <h1 class="text-center">Reid Bruce</h1>
+        <p class="text-center">
+            Hello! I'm Reid Bruce, a Game/Web Programmer. Welcome to my portfolio website, where I showcase my skills,
+            projects, and experiences.
+        </p>
+        <p class="text-center">
+            I was born in Woodinville, Washington, and currently reside in Boise, Idaho, where I attend college at Boise
+            State University. My dream in life is to create experiences that people will remember forever, whether through
+            video games or other forms of media.
+        </p>
+        <p class="text-center">
+            Currently, I am a student in Boise State's GIMM program (Games, Interactive Media, and Mobile), where I am
+            learning multiple industry-standard skills and programs that will help me achieve that dream.
+        </p>
+        <div class="text-center">
+            <img src="Images/me.jpg" alt="Placeholder image of my work" class="img-fluid rounded hover-image">
+        </div>
 
-        I was born in Woodinville, Washington, and currently reside in Boise, Idaho, where I attend college at Boise
-        State University. My dream in life is to create experiences that people will remember forever, whether through
-        video games or other forms of media.
+        <h2 class="text-center mt-4">Contact Me</h2>
+        <p class="text-center">Feel free to reach out for collaborations or inquiries:</p>
+        <ul class="list-unstyled text-center">
+            <li><a href="mailto:reidbruce@u.boisestate.edu">Email Me</a></li>
+            <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn Profile</a></li>
+            <li>
+                <p>Call or Text at 206-708-4035</p>
+            </li>
+        </ul>
+    </div>
 
-        Currently, I am a student in Boise State's GIMM program (Games, Interactive Media, and Mobile), where I am
-        learning multiple industry-standard skills and programs that will help me achieve that dream.
-    </p>
-    <img src="Images/me.jpg" alt="Placeholder image of my work" style="max-width: 100%;"  class="hover-image">
-
-
-
-    <h2>Contact Me</h2>
-    <p>Feel free to reach out for collaborations or inquiries:</p>
-    <ul style="list-style: none; padding: 0; margin: 0;">
-        <li><a href="mailto:reidbruce@u.boisestate.edu">Email Me</a></li>
-        <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn Profile</a></li>
-        <li>
-            <p>Call or Text at 206-708-4035</p>
-        </li>
-    </ul>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
