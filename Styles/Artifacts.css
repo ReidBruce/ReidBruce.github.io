@@ -1,124 +1,82 @@
-/** Grid system - https://www.w3schools.com/css/css_rwd_grid.asp **/
-* {
-    box-sizing: border-box;
+/* Styles/Artifacts.css */
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* White text */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
-/* For mobile phones: */
-[class*="col-"] {
-    width: 100%;
+/* Navbar */
+.navbar {
+    background-color: #181818 !important; /* Dark navbar background */
+    border-bottom: 2px solid #ffffff; /* White border */
 }
 
-@media only screen and (min-width: 768px) {
-
-    /* For desktop: */
-    .col-1 {
-        width: 8.33%;
-    }
-
-    .col-2 {
-        width: 16.66%;
-    }
-
-    .col-3 {
-        width: 25%;
-    }
-
-    .col-4 {
-        width: 33.33%;
-    }
-
-    .col-5 {
-        width: 41.66%;
-    }
-
-    .col-6 {
-        width: 50%;
-    }
-
-    .col-7 {
-        width: 58.33%;
-    }
-
-    .col-8 {
-        width: 66.66%;
-    }
-
-    .col-9 {
-        width: 75%;
-    }
-
-    .col-10 {
-        width: 83.33%;
-    }
-
-    .col-11 {
-        width: 91.66%;
-    }
-
-    .col-12 {
-        width: 100%;
-    }
+.navbar-brand {
+    font-weight: bold;
+    color: #ffffff !important; /* White text */
 }
 
-[class*="col-"] {
-    float: left;
-    padding: 15px;
+.nav-link {
+    color: #ffffff !important; /* White text */
+    transition: color 0.3s ease-in-out;
 }
 
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
+.nav-link:hover {
+    color: #bb86fc !important; /* Purple hover effect */
 }
 
-/** Image - https://www.w3schools.com/css/css_rwd_grid.asp **/
-img {
-    max-width: 100%;
-    height: auto;
+/* Section Titles */
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #ffffff; /* White text */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ffffff; /* White underline */
+    padding-bottom: 10px;
 }
 
-/** Overflow (for tables) - https://www.w3schools.com/howto/howto_css_table_responsive.asp **/
-.overflow {
-    overflow-x: auto;
+/* Cards */
+.card {
+    background-color: #181818; /* Dark card background */
+    color: #ffffff; /* White text */
+    border: 1px solid #ffffff; /* White border */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-h1 {
-    color: steelblue;
+.card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4); /* Shadow effect */
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #bb86fc; /* Purple button */
+    border: none;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #ffffff; /* White button on hover */
+    color: #121212; /* Dark text */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Centering and Spacing */
+.text-center {
     text-align: center;
 }
 
-label {
-    color: purple;
-}
-
-div {
-    color: forestgreen;
-}
-
-body {
-    background-color: beige;
-
-}
-
-p {
-    color: steelblue;
-}
-
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    /* 16:9 aspect ratio */
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-    background: #000;
-}
-
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
+.container {
+    margin-top: 30px;
+    padding-bottom: 50px;
 }
